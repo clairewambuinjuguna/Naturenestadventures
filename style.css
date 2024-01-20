@@ -1,0 +1,125 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100&family=Roboto+Condensed:wght@100;200;300;400;500;600&display=swap');
+</style>
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body {
+font-family: 'Roboto Condensed', sans-serif;
+background-color: #357960
+}
+.landing{
+background-image: url('./assets/background-pic.jpg'); 
+background-size:75%;
+background-position: center;
+/*background-repeat: no-repeat;*/
+height: 80vh;
+
+display: flex;
+align-items: center;
+justify-content: center;
+color: white; /* Text color on top of the image */
+font-family: Arial, sans-serif;
+text-align: center;
+margin-top: -10rem;
+background-color: #357960;
+}
+
+
+#heading-one {
+    height: 75vh;
+    left: 120px;
+   display: block;
+   margin-left: 5rem;
+  
+}
+.search-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #searchInput {
+    padding: 8px;
+  }
+  
+  #searchButton {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #searchButton:hover {
+    background-color: #45a049;
+  }
+  
+  .destination-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .destination-list li {
+    display: none; /* Hide list items initially */
+  }
+ .navLinks {
+        list-style-type: none;
+        justify-content: left;
+        /*margin-bottom: -10rem;*/
+        text-align: right;
+        color: white;
+        background-size: cover;
+        margin: 0 auto;
+        padding: 0;
+        /*margin-bottom: 5rem;*/
+        
+    
+        /*padding: 0;
+        color: rgb(78, 181, 78) ;
+        display: flex;
+        position: absolute; /* Added position: fixed to make the menu stick to the viewport 
+        margin-bottom: 10rem;
+        transform: translate(-50%, -50%);
+        gap: 1rem;
+        background-color: burlywood;
+        background-size: cover;
+        margin: 0 auto;
+        height: 26vh;
+        bottom: 5px;
+        margin: 0 1rem;*/
+        
+}
+.navLinks li{
+  display: inline-block;
+  margin-right: 10px;
+ 
+}
+.paragraph{
+    right:70%;
+    left:20% ;
+    font-size: large;
+    display: inline-block;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+footer {
+    height: 26vh;
+    bottom: 5px;
+    margin: 0 1rem;
+  }
+  
+  footer{
+    text-align: center;
+    background-color: #357960;
+    background-size: cover;
+    margin-top: -1rem;
+    margin-left: -5rem;
+    margin-right: -10rem;
+  }
+
