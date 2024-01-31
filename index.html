@@ -8,30 +8,24 @@
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-        <div class="navLinks">
+       <nav> <div class="navLinks">
              <ul >
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#destinations">DESTINATIONS </a> </li>
-              <li><a href="#camping">CAMPING</a></li>
-              <li><a href="#contact">CONTACTS</a></li>
+            
+              <li><a href="#home"><img src="./assets/homeicon.png" alt="Home" class="navIcon"><span>HOME</span></a></li>
+              <li><a href="#destinations"><img src="./assets/destinations.png" alt="Destinations" class="navIcon"><span>DESTINATIONS</span></a></li>
+              <li><a href="#camping"> <img src="./assets/camping.png" alt="Camping" class="navIcon"><span>CAMPING</span></a></li>
+              <li><a href="#contact"><img src="./assets/contacts.png" alt="Home" class="navIcon"><span>CONTACTS</span></a></li>
             </ul>
           </div>
+        </nav>
           <br>
-          <div class="search-container">
+          <!--<div class="search-container">
             <input type="text" id="searchInput" placeholder="Search...">
             <button id="searchButton" onclick="searchDestinations()">Search</button>
           </div>
         
-          <ul id="destinationList" class="destination-list">
-            <!-- List of destinations will be displayed here -->
-            <li>New York</li>
-            <li>Paris</li>
-            <li>Tokyo</li>
-            <li>London</li>
-         </ul>
-        
-        <br>
-    <section class="landing">
+        <br>-->
+    <section class="landing" id="home">
     <div id="heading-one">
     <h1>WELCOME TO NATURENEST ADVENTURES </h1>
     <div></div>
@@ -45,53 +39,92 @@
  </section>
  <br>
  
- <section >
-    <h1 class="destination">DESTINATIONS</h1>
+ <section id="destinations">
+    <h1 class=>DESTINATIONS</h1>
     <br>
    <div class="destinations">
     <div class="destinationimage">
-        <p>London</p>
+        <h3>London</h3>
         <img src="./assets/london.jpg">
     </div>
     <div class="destinationimage">
-        <p>Dubai</p>
+        <h3>Dubai</h3>
         <img src="./assets/dubai.jpg">
     </div>
     <div class="destinationimage">
-        <p>South Africa</p>
+        <h3>South Africa</h3>
         <img src="./assets/southafrica.jpg">
     </div>
 </div>
  </section>
- <section>
+ <section id="camping">
     <h1>CAMPING</h1>
     <br>
    <div class="campingsites">
     <div class="campingsitesimage">
-        <p>MaasaiMara</p>
+        <h3 id="destinationTitle">MaasaiMara </h3>
         <img src="./assets/maasaimara.jpg">
     </div>
     <div class="campingsitesimage">
-        <p>MT Kenya</p>
+        <h3>MT Kenya</h3>
         <img src="./assets/mtkenya.jpg">
     </div>
     <div class="campingsitesimage">
-        <p>Tsavo National Park</p>
+        <h3>Tsavo National Park</h3>
         <img src="./assets/tsavo.jpg">
     </div>
 </div>
+<section id="contact">
+  <p >Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container ">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:clairenjugunaw@gmail.com">clairenjugunaw@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/telephoneicon.png"
+        alt="telephone icon"
+        class="icon contact-icon"
+      />
+      <p><a href="tel:+254704641105">call</a></p>
+    <div class="contact-info-container">
+      <img
+        src="./assets/instagram.png"
+        alt="instagramicon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.instagram.com">instagram</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/facebook.png"
+        alt="facebookicon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.facebook.com">Facebook</a></p>
+    </div>
+  </div>
+</section>
+
+</section>
  </section>
     <footer>
-        <nav>
+        
           <div class="nav-links-container">
-            <ul class="nav-links">
+            <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#destinations">DESTINATIONS</a></li>
                 <li><a href="#camping">CAMPING</a></li>
                 <li><a href="#contact">CONTACTS</a></li>
             </ul>
           </div>
-        </nav>
+      
         <p>Copyright &#169; 2024 Claire Njuguna. All Rights Reserved.</p>
       </footer>
 <script src="script.js"></script>

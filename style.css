@@ -5,18 +5,63 @@
     margin: 0;
     padding: 0;
   }
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+/*transition*/
+a {
+  transition: all 300ms ease;
+}
+nav.navLinks{
+display: flex;
 
 
+}
+nav{
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  margin-bottom: 10rem;
+  background-color: #357960 ;
+  
+  
+  
+}
+.navLinks{
+  gap: 2rem;
+  list-style: none;
+
+
+}
+a{
+  color:whitesmoke;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+a:hover{
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: rgb(239, 138, 6);
+
+}
+img:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+}
 body {
 font-family: 'Roboto Condensed', sans-serif;
-background-color: #357960
+margin: 0;
+
 }
 .landing{
 background-image: url('./assets/background-pic.jpg'); 
-background-size:75%;
-background-position: center;
-/*background-repeat: no-repeat;*/
-height: 80vh;
+background-size:cover;
+background-position:100% ;
+
+background-repeat: no-repeat;
+height: 100vh;
 
 display: flex;
 align-items: center;
@@ -24,8 +69,8 @@ justify-content: center;
 color: white; /* Text color on top of the image */
 font-family: Arial, sans-serif;
 text-align: center;
-margin-top: -10rem;
-background-color:#8BC34A;
+margin-top:-12rem;
+
 }
 
 
@@ -69,15 +114,19 @@ background-color:#8BC34A;
   }
  .navLinks {
         list-style-type: none;
-        justify-content: left;
-        /*margin-bottom: -10rem;*/
-        text-align: right;
-        color: white;
+        justify-content: right;
+        text-align: center;
+       
         background-size: cover;
-        margin: 0 auto;
+      
         padding: 0;
-        /*margin-bottom: 5rem;*/
-        
+        display: inline-block;
+        display: flex;
+        gap: 1rem;
+    
+        margin-left: 0;
+  
+ }
     
         /*padding: 0;
         color: rgb(78, 181, 78) ;
@@ -97,8 +146,35 @@ background-color:#8BC34A;
 .navLinks li{
   display: inline-block;
   margin-right: 10px;
-  color: white;
  
+}
+.navIcon{
+  height: 2.5rem;
+  
+}
+.navLinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navLinks li {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  justify-content: right;
+  background-size: cover;
+  
+}
+
+.navIcon {
+  height: 2.5rem;
+}
+h3{
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background-color: brown;
+  border-radius: 2rem;
+  color:  white;
 }
 .paragraph{
     right:70%;
@@ -154,7 +230,11 @@ section {
     display: flex;
     justify-content: space-between;
     margin-top: 0; /* Adjust margin as needed */
+    
 
+  }
+  .campingsites h1{
+    color:#8BC34A
   }
   
   .campingsitesimage {
@@ -183,8 +263,8 @@ footer {
   
   footer{
     text-align: center;
-    background-color: #357960;
-    background-size: cover;
+    background-color: #357960 !important;
+    /*background-size: cover;*/
     margin-top: -1rem;
     margin-left: -5rem;
     margin-right: -10rem;
@@ -194,8 +274,61 @@ footer {
         justify-content: space-between;
         display: inline-block;
         margin-right: 10px;
-        color: white;
+        color: white !important;
+        
+}
+  #contact {
+        display: flex;
+        justify-content: center;
+        display: inline-block;
+        
+       
+      }
+  .contact-info-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 1rem;
+      }
+      
+  .contact-info-container p {
+        font-size: larger;
+      }
+      
+  .icon {
+        cursor: default;
+        height: 2.5rem;
+      }
+ .contact-info-upper-container {
+        display: flex;
+        justify-content: center;
+        border-radius: 2rem;
+        border: rgb(53, 53, 53) 0.1rem solid;
+        border-color: rgb(163, 163, 163);
+        background: (250, 250, 250);
+        margin: 2rem auto;
+        padding: 0.5rem;
         
       }
-  
+      
+      .nav-links-container a{
+        color: whitesmoke;
+      }
+      .nav-links-container a:hover{
+        color: black;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+        text-decoration-color: rgb(239, 138, 6);
 
+      }
+      #contact a{
+        color: #357960;
+      }
+      #contact a:hover{
+        color: black;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+        text-decoration-color: rgb(239, 138, 6);
+
+      }
